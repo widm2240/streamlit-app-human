@@ -13,7 +13,7 @@ def main():
 
     # 색상 추가
     st.title('데이터 프레임에 색상')
-    st.dataframe(iris_df.style.highlight_max)
+    st.dataframe(iris_df.style.highlight_max(axis=1))
 
 if __name__ == "__main__":
     main()
